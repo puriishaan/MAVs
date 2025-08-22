@@ -10,7 +10,6 @@ import joblib
 # Load model and scaler
 # -------------------------------
 
-# ✅ load without compiling to avoid 'mse' error
 model = keras.models.load_model("my_10d_nn_model1.h5", compile=False)
 scaler = joblib.load("scaler1.joblib")
 
